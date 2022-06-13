@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;700&display=swap');
+
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style-type: none;
+}
+body{
+      font-family: 'Poppins', sans-serif;
+}
+header{
+      padding: 0.8em;
+      background-color: #0a3d62;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+}
+.container{
+      width: 85%;
+      margin: 0 auto;
+      position: relative;
+}
+nav{
+      display: flex;
+      justify-content: space-between;
+}
+nav .logo a{
+      color: white;
+      font-size: 1.2em;
+}
+.menu ul .menuNav{
+      display: flex;
+}
+.menu ul li{
+      padding: 10px;
+      margin: 0 5px;
+}
+.menu ul input[type="checkbox"] {
+      display: none;
+}
+.menu ul .hamburger {
+      display: none;
+      font-size: 24px;
+      user-select: none;
+}
+.menu ul li:hover{
+      background-color: #60a3bc;
+}
+.menu ul li a{
+      color: white;
+}
+.home{
+      height: 100vh;
+}
+.home img{
+      height: 100vh;
+      width: 100%;
+      opacity: 0.4;
+}
+.home .deskripsi{
+      position: absolute;
+      top: 40%;
+      margin-inline: 120px;
+      text-align: left;
+}
+.home .deskripsi h1{
+      font-size: 2.2em;
+      padding: 10px 0;
+      color: #0a3d62;
+}
+.home .deskripsi p{
+      width: 50%;
+      padding: 10px 0;
+      text-align: justify;
+      color: #2f3640;
+}
+.home .deskripsi button{
+      padding: 10px 20px;
+      background-color: #0a3d62;
+      border-radius: 10px;
+      border: none;
+      color: white;
+      font-size: 1.2em;
+}
+.home .deskripsi button:hover{
+      background-color: #60a3bc;
+}
+section{
+      width: 100%;
+      background-color: #f1f2f6;
+}
+
+.about{
+      padding-block: 150px;
+}
+.about h1{
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.2em;
+      color: #0a3d62;
+}
+.about .profile{
+      display: flex;
+      padding: 50px;
+}
+.profile .foto{
+      padding: 0 35px;
+      text-align: center;
+}
+.profile .foto img{
+      width: 300px;
+      border-radius: 50%;
+      border: 1px solid #0a3d62;
+}
+.profile .foto span{
+      color: #718093;
+}
+
+.profile .biodata{
+      border-left: 5px solid black;
+      padding: 35px;
+}
+.profile .biodata h2{
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: #60a3bc;
+}
+.profile .biodata p{
+      text-align: justify;
+      color: #718093;
+}
+
+.portofolio{
+      padding-bottom: 150px;
+}
+.portofolio h1{
+      font-size: 2.2em;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0a3d62;
+}
+.portofolio .gambar{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+}
+.portofolio .gambar img{
+      margin: 20px 10px;
+      width: 350px;
+      height: 300px;
+      border-radius: 5px;
+      border: 1px solid #0a3d62;
+}
+.blog{
+      padding-bottom: 150px;
+}
+.blog h1{
+      font-size: 2.2em;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0a3d62;
+}
+.blog .cardBlog{
+      display: flex;
+}
+.blogs{
+      background-color: #f5f6fa;
+      width: 30%;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0.2px 8px rgba(0,0,0,0.5);
+}
+.blogs img{
+      width: 100%;
+      height: 200px;
+      margin: 0 auto;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+}
+.blogs .isiBlog{
+      margin: 10px 20px;
+}
+.blogs .isiBlog h4{
+      color: #0a3d62;
+      font-size: 1.2em;
+}
+.blogs .isiBlog p{
+      margin: 15px 0;
+      font-size: 0.9em;
+      text-align: justify;
+      color: #718093;
+}
+.blogs .btnRead{
+      border-top: 1px solid gray;
+      padding: 15px 20px;
+      background-color: #fff;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+}
+.blogs .btnRead a{
+      color: #60a3bc;
+}
+
+.team{
+      padding-bottom: 150px;
+}
+.team h1{
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.2em;
+      color: #0a3d62;
+}
+.teamList{
+      display: flex;
+}
+.teamList .list{
+      margin: 0 10px;
+      width: 25%;
+}
+.list {
+      position: relative;
+}
+.list img{
+      width: 100%;
+      border-radius: 50%;
+      border: 1px solid rgb(74, 105, 189);
+}
+.list .listP{
+      position: absolute;
+      bottom: 25px;
+      text-align: center;
+      width: 100%;
+      border-start-end-radius: 100%;
+      direction: ltr;
+      color: white;
+      background-color: rgb(74, 105, 189);
+}
+.list:hover .listP{
+      background-color: rgba(74, 105, 189, 0.6);
+      bottom: 0;
+      height: 100%;
+      padding: 5em;
+      border-start-end-radius: inherit;
+      transition: border-start-end-radius 1s ease;
+}
+.list span{
+      color: #718093;
+}
+form{
+      padding-bottom: 150px;
+}
+.contact{
+      display: flex;
+}
+.contact .title{
+      width: 35%;
+      padding: 0 10px;
+}
+.contact .title h1{
+      padding: 80px 0;
+      font-size: 2.2em;
+      color: #0a3d62;
+}
+.contact .contactInput{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+}
+.contactInput input{
+      padding: 10px 20px;
+      font-size: inherit;
+      font-family: inherit;
+      border-radius: 5px;
+      border: 1px solid grey;
+}
+.contactInput input:focus{
+      outline: rgba(10, 61, 98, 0.6) solid 3px;
+}
+.contactInput input:nth-child(1){
+      margin-bottom: 20px;
+}
+.contactInput textarea{
+      height: 150px;
+      margin-block: 20px;
+      padding: 10px 20px;
+      font-size: inherit;
+      font-family: inherit;
+      border-radius: 5px;
+      resize: vertical;
+      overflow: auto;
+}
+.contactInput textarea:focus{
+      outline: rgba(10, 61, 98, 0.6) solid 3px;
+}
+.contactInput input[type="submit"]{
+      background-color: #0a3d62;
+      border: none;
+      color: white;
+}
+.contactInput input[type="submit"]:hover{
+      opacity: 0.8;
+}
+
+
+footer{
+      padding: 30px 0;
+      background-color: #0a3d62;
+}
+footer p{
+      color: white;
+      text-align: center;
+      font-size: 1.2em;
+}
+
+@media only screen and (max-width:990px) {
+      
+      .home{
+            height: 50vh;
+      }
+      .home img{
+            height: 50vh;
+      }
+      .home .deskripsi{
+            top: 10%;
+      }
+      .home .deskripsi h1{
+            font-size: 2em;
+      }
+      .home .deskripsi p{
+            width: 80%;
+      }
+      .profile .foto{
+            padding: 0 15px;
+      }
+      .profile .foto img{
+            width: 200px;
+      }
+      .about .profile{
+            padding: 0;
+      }
+      .profile .biodata{
+            padding: 0 20px;
+      }
+      .profile .biodata p{
+            font-size: 0.8em;
+      }
+      .portofolio .gambar img{
+            margin: 15px auto;
+            width: 300px;
+            height: 250px;
+      }
+      .blogs img{
+            height: 120px;
+      }
+      .blogs .isiBlog h4{
+            font-size: 0.8em;
+      }
+      .blogs .isiBlog{
+            margin: 5px 15px;
+      }
+      .blogs .isiBlog p{
+            margin: 15px 0;
+            font-size: 0.6em;
+      }
+      .blogs .btnRead{
+            padding: 5px 15px;
+            font-size: 0.8em;
+            
+      }
+      .list:hover .listP{
+            padding: 2em;
+      }
+      .list span{
+            font-size: 0.8em;
+      }
+}
+@media only screen and (max-width: 600px){
+      .container{
+            width: 95%;
+      }
+      .menu ul input[type=checkbox]:checked ~ .menuNav{
+            display: block;
+      }
+      .menu ul .hamburger {
+            display: block;
+            color: white;
+      }
+      .menu ul .menuNav{
+            display: none;
+            display:none;
+            position: absolute;
+            background-color:#0a3d62;
+            top: 55px;
+            right: 0;
+            text-align: center;
+            padding: 12px 50px;
+      }
+      .menu ul .menuNav li:hover {
+            display: inline-block;
+            background-color: #60a3bc;
+            transition: 0.3s ease;
+      }
+      .home{
+            height: 50vh;
+      }
+      .home img{
+            height: 50vh;
+      }
+      .home .deskripsi{
+            top: 15%;
+            margin-inline: 30px;
+      }
+      .home .deskripsi h1{
+            font-size: 1.5em;
+      }
+      .home .deskripsi p{
+            width: 80%;
+            font-size: 0.7em;
+      }
+      .home .deskripsi button{
+            font-size: 0.7em;
+            padding: 8px 18px;
+      }
+      .about h1{
+            font-size: 1.5em;
+      }
+      .profile .foto{
+            padding: 0 10px;
+      }
+      .profile .foto img{
+            width: 100px;
+      }
+      .profile .foto span{
+            font-size: 0.8em;
+      }
+      .profile .biodata{
+            padding: 0 10px;
+      }
+      .profile .biodata h2{
+            font-size: 1em;
+            margin-bottom: 10px;
+      }
+      .profile .biodata p{
+            font-size: 0.6em;
+      }
+      .portofolio h1{
+            font-size: 1.5em;
+      }
+      .blog h1{
+            font-size: 1.5em;
+      }
+      .blogs{
+            margin: 5px;
+      }
+      .blogs img{
+            height: 100px;
+      }
+      .blogs .isiBlog h4{
+            font-size: 0.6em;
+      }
+      .blogs .isiBlog{
+            margin: 0px 5px;
+      }
+      .blogs .isiBlog p{
+            margin: 10px 0;
+            font-size: 0.4em;
+      }
+      .blogs .btnRead{
+            padding: 3px 5px;
+            font-size: 0.6em;
+            
+      }
+      .team h1{
+            font-size: 1.5em;
+      }
+      .list .listP{
+            font-size: 0.7em;
+      }
+      .list:hover .listP{
+            padding: 1em;
+      }
+      .list span{
+            font-size: 0.4em;
+      }
+      .contact .title{
+            width: 100%;
+      }
+      .contact .title h1{
+            font-size: 1.5em;
+      }
+      .contact .contactInput{
+            width: 90%;
+      }
+}
